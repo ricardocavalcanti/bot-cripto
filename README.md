@@ -3,20 +3,20 @@
 
 ## 💡 Objetivo
 
-Este projeto tem como objetivo inicial consultar o valor atual do **Bitcoin** utilizando uma arquitetura robusta e extensível: **Arquitetura Hexagonal (Ports and Adapters)**.
+Este projeto tem como objetivo inicial consultar o valor atual do Bitcoin utilizando uma arquitetura robusta e extensível: Arquitetura Hexagonal (Ports and Adapters).
 
-A ideia é criar um sistema modular e bem estruturado, que possa futuramente evoluir para análises mais completas do mercado cripto e integração com dados de compras pessoais.
+A aplicação funcionará como uma API backend, que irá consumir a API da Binance para fornecer dados sobre criptomoedas. Essa API será futuramente consumida por uma interface web desenvolvida em React.
 
 ## 🎯 Funcionalidade Inicial
 
-- Consultar o valor atual do **Bitcoin** a partir de uma API externa.
+- Consultar o valor atual do Bitcoin a partir da API pública da Binance.
 
 ## 🏗️ Arquitetura Hexagonal
 
 A aplicação está organizada com base na Arquitetura Hexagonal (Ports and Adapters), com as seguintes camadas/pacotes:
 
 ```
-com.seuprojeto
+com.botcrypto.api
 ├── application       # Casos de uso (interage com o domínio)
 ├── domain            # Entidades, regras de negócio, interfaces (portas)
 │   ├── model         # Entidades e objetos de valor
@@ -34,16 +34,17 @@ com.seuprojeto
 
 - Armazenar preços consultados para histórico e análise.
 - Cadastrar compras de criptomoedas e comparar preços de aquisição.
-- Visualização em dashboard com gráficos e tendências.
+- Visualização em dashboard com gráficos e tendências (via frontend React).
 - Suporte a múltiplas moedas (Ethereum, Solana, etc.).
 
 ## 🛠️ Tecnologias previstas
 
 - Linguagem: Java
 - Framework: Spring Boot 
-- API de cotação de mercado: Binance
+- API de cotação de mercado: [Binance](https://binance-docs.github.io/apidocs/)
 - JSON parsing: Jackson
 - (Futuramente) Banco de dados: MySql
+- Frontend: React (em projeto separado)
 
 ---
 
