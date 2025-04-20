@@ -57,3 +57,37 @@ com.botcrypto.api
 ## 📌 Observações
 
 Este projeto está em estágio inicial e será desenvolvido passo a passo, com foco em clareza e aprendizado. O objetivo também é aplicar boas práticas de arquitetura desde o início.
+
+---
+
+## 📝 Padrão de Mensagens de Commits
+
+Cada tipo de commit segue um padrão bem definido:
+
+### 🚀 Funcionalidades novas
+- **`feat:`** Para novas funcionalidades.
+    - Exemplo: `feat(api): criar endpoint para consultar o preço do Bitcoin`
+
+### 🐛 Correções de bugs
+- **`fix:`** Para correções de bugs.
+    - Exemplo: `fix(client): corrigir erro ao tratar resposta da Binance`
+
+### 🔨 Refatorações de código
+- **`refactor:`** Para refatorações de código sem alteração de comportamento.
+    - Exemplo: `refactor(service): extrair lógica de cotação para classe separada`
+
+### 📄 Alterações na documentação
+- **`docs:`** Para alterações na documentação.
+    - Exemplo: `docs: atualizar instruções de execução local`
+
+### 🎨 Mudanças de estilo e formatação
+- **`style:`** Para mudanças de estilo (formatação de código, etc.).
+    - Exemplo: `style: remover espaços em branco desnecessários`
+
+### 🧪 Testes
+- **`test:`** Para adicionar ou modificar testes.
+    - Exemplo: `test: adicionar teste unitário para cotaçãoService`
+
+### 🧹 Tarefas diversas
+- **`chore:`** Para tarefas diversas (build, configuração, etc.).
+    - Exemplo: `chore: adicionar .gitignore para Maven e IntelliJ`
